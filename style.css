@@ -1,0 +1,53 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+.container {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    max-width: 400px;
+    width: 90%;
+}
+
+h1 { margin-top: 0; color: #333; }
+p { color: #666; }
+.small { font-size: 0.8rem; opacity: 0.7; }
+
+/* Utility Classes */
+.hidden { display: none; }
+
+/* Buttons */
+.btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+}
+
+.btn:active { transform: scale(0.98); }
+
+.btn-blue { background-color: #4285F4; color: white; } /* Google Blue */
+.btn-red  { background-color: #ff4444; color: white; height: 80px; font-size: 24px; }
+.btn-green { background-color: #00C851; color: white; }
+.btn-grey { background-color: #e0e0e0; color: #333; }
+
+/* Status Message Animation */
+#status-msg {
+    font-weight: bold;
+    min-height: 24px;
+}
