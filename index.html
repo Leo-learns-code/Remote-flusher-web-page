@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toilet Command Center</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🚽 Command Center</h1>
+        
+        <div id="login-section">
+            <p>Identify yourself to access the plumbing.</p>
+            <button id="btn-login" class="btn btn-blue">Login with Google</button>
+        </div>
+
+        <div id="control-section" class="hidden">
+            <p id="welcome-msg">Welcome, User.</p>
+            
+            <button id="btn-flush" class="btn btn-red">FLUSH TOILET</button>
+            
+            <p id="status-msg">Ready...</p>
+            
+            <button id="btn-logout" class="btn btn-grey">Logout</button>
+        </div>
+
+        <div id="paywall-section" class="hidden">
+            <hr>
+            <p>🚫 <strong>Access Denied</strong></p>
+            <p>You are not on the VIP Whitelist.</p>
+            
+            <a href="https://buy.stripe.com/YOUR_STRIPE_LINK_HERE" target="_blank">
+                <button class="btn btn-green">Subscribe for Access ($5)</button>
+            </a>
+            <p class="small">After paying, wait 30s and try flushing again.</p>
+        </div>
+    </div>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
